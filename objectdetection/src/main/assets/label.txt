@@ -1,0 +1,4 @@
+closed-door
+open-door
+semi-open-door
+stairs

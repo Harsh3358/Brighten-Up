@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg1">
+
+    <!-- Adaptive Icon -->
+
+    <!-- App Name Header -->
+
+    <!-- Main Text -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="406dp"
+        android:layout_height="574dp"
+        android:background="#F2EDE7B5"
+        android:backgroundTint="#F2EDE7B5"
+        android:text="                                                                                                       "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameHeader" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="4dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appNameHeader"
+        android:layout_width="515dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="#E9EADE"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Brighten Up"
+        android:textAlignment="center"
+        android:textColor="#F3000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="36dp"
+        android:background="#F03E4C70"
+        android:padding="16dp"
+        android:text="\nInstructions:\n\n1. If you want to ask any questions, double-tap the screen to enable the microphone and then ask me your question.\n\n2. To enable Object Detection say 'Open Object Detection.'\n\n3. To enable Text Recognition say 'Open Text Recognition.'\n\n4. To enable Face Recognition say 'Open Face Recognition.'"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appNameHeader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
